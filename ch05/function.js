@@ -132,10 +132,11 @@ randomQuiz('love you', printYes, printNo);
 
 // Arrow function
 // always annonymous
+/*
 const simplePrint = function () {
   console.log('simplePrint!');
 };
-
+*/
 const simplePrint = () => console.log('simplePrint!');
 const add = (a, b) => a + b;
 const simpleMultiply = (a, b) => {
