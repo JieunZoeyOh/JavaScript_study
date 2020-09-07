@@ -1,16 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -webkit-pictograph;
+  color: #fffaf5;
+}
+
 body {
   background-color: antiquewhite;
 }
 
+.container {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  height: 200px;
+  margin-top: -100px;
+  width: 50%;
+  text-align: center;
+  z-index: 1;
+}
+
+.left_container {
+  left: 0;
+}
+
+.right_container {
+  right: 0;
+  height: auto;
+  top: 35%;
+}
+
+.middle_container {
+  width: 100%;
+}
+
 h1 {
-  color: peru;
+  font-size: 7em;
+  text-shadow: 2px 2px 2px #9781816e;
 }
 
 .form,
-.greetings {
+.greetings,
+.toDoForm {
   display: none;
 }
 
+.greetings {
+  font-size: 2em;
+  text-shadow: 2px 2px 2px #9781816e;
+  font-weight: 100;
+}
+
+.toDoForm {
+  margin-top: 55px;
+}
+.form > input,
+.toDoForm > input {
+  width: 450px;
+  height: 40px;
+  font-size: 2.2rem;
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #fffaf5;
+}
+
+.toDoForm > input:focus {
+  outline: none;
+}
+
+.weather {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  z-index: 1;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fffaf5;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fffaf5;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fffaf5;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fffaf5;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fffaf5;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #fffaf5;
+}
+
+.toDoList li {
+  padding-top: 10px;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.toDoList button {
+  border: none;
+  background: none;
+  margin-left: 10px;
+}
+
+.toDoList button:focus {
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .showing {
+  animation: fadeIn 1.5s linear;
   display: block;
+}
+
+.bgImage {
+  animation: fadeIn 0.7s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #00000033;
+}
+
+.turnRed {
+  color: rgb(134, 40, 40);
 }

@@ -4,17 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="index.css" type="text/css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1></h1>
+    <div class="left_container container">
+      <div class="js-clock">
+        <h1></h1>
+      </div>
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
+    <div class="right_container container">
+      <form action="" class="js-toDoForm toDoForm">
+        <input type="text" placeholder="write a to do" />
+      </form>
+      <ul class="js-toDoList toDoList"></ul>
+    </div>
+    <span class="js-weather weather"></span>
     <script defer src="clock.js"></script>
     <script defer src="greeting.js"></script>
+    <script defer src="todo.js"></script>
+    <script defer src="bg.js"></script>
+    <script defer src="weather.js"></script>
+    <div class="background"></div>
   </body>
 </html>
