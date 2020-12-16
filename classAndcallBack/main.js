@@ -16,7 +16,7 @@ class Counter {
 
 // const coolCounter = new Counter(runEveryFiveTimesLogVer); // callback : function
 const coolCounter = new Counter(runEveryFiveTimesAlertVer); // callback : function
-// 재사용 가능
+// 재사용이 가능하다.
 // const coolCounter = new Counter(); // callback : undefined
 // new 연산자를 사용하여 클래스 생성할 경우 -> constructor 실행된다.
 
