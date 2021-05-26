@@ -18,6 +18,11 @@ console.log(winBalls, bonus);
 const $result = document.querySelector('#result');
 const $bonus = document.querySelector('#bonus');
 
+/**
+ * colorize ball by adding class
+ * @param {number} number lottery number
+ * @param {object} $parent tag element
+ */
 const colorize = (number, $parent) => {
   if (number < 10) {
     $parent.className = 'ball underTen';
@@ -32,6 +37,11 @@ const colorize = (number, $parent) => {
   }
 };
 
+/**
+ * draw Ball by inserting div element after the last child of the result element
+ * @param {number} number lottery number
+ * @param {object} $parent tag element
+ */
 const drawBall = (number, $parent) => {
   const $ball = document.createElement('div');
   $ball.textContent = number;
