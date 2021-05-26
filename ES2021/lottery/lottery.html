@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>로또추첨기</title>
+  <style>
+    .ball {
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+      text-align: center;
+      margin-right: 20px;
+    }
+    .underTen {
+      background-color: red;
+      color: white;
+    }
+    .underTwenty {
+      background-color: orange;
+    }
+    .underThirty {
+      background-color: yellow;
+    }
+    .underForty {
+      background-color: blue;
+      color: white;
+    }
+    .fortyOrMore {
+      background-color: green;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="result">추첨 결과는? </div>
+  <div id="bonus">보너스: </div>
+  <script src="lottery.js"></script>
+</body>
