@@ -24,16 +24,17 @@ const $bonus = document.querySelector('#bonus');
  * @param {object} $parent tag element
  */
 const colorize = (number, $parent) => {
+  $parent.className = 'ball '
   if (number < 10) {
-    $parent.className = 'ball underTen';
+    $parent.className += 'underTen';
   } else if (number < 20) {
-    $parent.className = 'ball underTwenty';
+    $parent.className += 'underTwenty';
   } else if (number < 30) {
-    $parent.className = 'ball underThirty';
+    $parent.className += 'underThirty';
   } else if (number < 40) {
-    $parent.className = 'ball underForty';
+    $parent.className += 'underForty';
   } else {
-    $parent.className = 'ball fortyOrMore';
+    $parent.className += 'fortyOrMore';
   }
 };
 
